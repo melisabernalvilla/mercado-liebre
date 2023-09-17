@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/img/logo-mercado-liebre.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    <h1>Editar Producto </h1>
+    <form action="/products/<%= product.id %>/edit?_method=PUT" method="post">
+        <input type="text" value="<%=product.title%>" name="title">
+        <input type="number" value="<%=product.price%>" name="price">
+        <input type="file" name="file">
+        <input type="submit" value="Registrar cambio">
+    </form> 
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

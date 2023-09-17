@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/img/logo-mercado-liebre.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <title>Mercado Liebre</title>
+  </head>
+  <body>
+    <%- include('./partials/navbar.ejs'); %>
+
+    <main>
+      <h3>Basado en tu última visita</h3>
+      <section class="main-categorias">
+        <!-- <% products.forEach(producto => { %>
+            <article class="articulos">
+                <img class="imagenes" src= "/img/ <%= products.img %>"/>
+                <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios"> <%= producto.price%> $</p>
+                <p class="descuentos"><%= producto.descuento%> % OFF</p>
+                <b class="descripciones"><%= producto.title%> </b>
+                <a href="/products/<%= producto.id %>/detail">
+                  <button>ver detalle</button>
+                </a>
+              </div>
+              </div>
+            </article>
+            <% }) %>  -->
+            <article class="articulos">
+              <img src="/img/img-macbook-pro-2019.jpg"/>
+                <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios">$230.000 </p>
+                <p class="descuentos">20% OFF</p>
+                <b class="descripciones">MacBook Pro 2019</b>
+              </div>
+              </div>
+            </article>
+            <article class="articulos">
+              <img src="/img/img-samsung-galaxy-s10.jpg"/>
+              <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios">$70.500</p>
+                <p class="descuentos">10% OFF</p>
+                <b class="descripciones">Samsung Galaxy S10</b>
+              </div>
+              </div>
+            </article>
+            <article class="articulos">
+              <img src="/img/img-tv-samsung-smart.jpg" />
+              <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios">$23.200</p>
+                <p class="descuentos">5% OFF</p>
+                <b class="descripciones">SmartTv Samsung 43"</b>
+              </div>
+              </div>
+              </div>
+            </article>
+            <article class="articulos">
+              <img src="/img/img-macbook-pro-2019.jpg"/>
+                <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios">$230.000 </p>
+                <p class="descuentos">20% OFF</p>
+                <b class="descripciones">MacBook Pro 2019</b>
+              </div>
+              </div>
+            </article>
+        
+      </section>
+      <h3>Sección de Ofertas</h3>
+      <section class="main-categorias">
+        <!-- <% products.forEach(producto => { %>
+          <article class="articulos">
+            <img src="/img/products/<%= products.img %>" alt="">
+              <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios"><%= producto.price %> $</p>
+                <p class="descuentos"><%= producto.descuento %> % OFF</p>
+                <b class="descripciones"><%= producto.title %></b>
+              </div>
+              </div>
+            </div>
+          </article>
+          <% }) %> -->
+ <article class="articulos">
+            <img src="/img/img-macbook-pro-2019.jpg"/>
+            <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios">$230.000</p>
+                <p class="descuentos">20% OFF</p>
+                <b class="descripciones">MacBook Pro 2019</b>
+              </div>
+            </div>
+          </article>
+            <article class="articulos">
+              <img src="/img/img-samsung-galaxy-s10.jpg"/>
+              <div class="box-descripcion" >
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios">$70.500</p>
+                <p class="descuentos">10% OFF</p>
+                <b class="descripciones">Samsung Galaxy S10</b>
+              </div>
+              </div>
+            </article>
+            <article class="articulos">
+              <img src="/img/img-tv-samsung-smart.jpg" />
+              <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios">$23.200</p>
+                <p class="descuentos">5% OFF</p>
+                <b class="descripciones">SmartTv Samsung 43"</b>
+              </div>
+              </div>
+            </article>
+            <article class="articulos">
+              <img src="/img/img-macbook-pro-2019.jpg"/>
+                <div class="box-descripcion">
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <div class="description-expecific">
+                <p class="precios">$230.000 </p>
+                <p class="descuentos">20% OFF</p>
+                <b class="descripciones">MacBook Pro 2019</b>
+              </div>
+              </div>
+            </article>
+      </section>
+    </main>
+
+    <%- include('./partials/footer.ejs'); %>
+  
+  </body>
+</html>

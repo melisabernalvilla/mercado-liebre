@@ -1,0 +1,236 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+  }
+  
+  body{
+      background-color: #ebebeb;
+  }
+  
+  header {
+      width: 100vw;
+      background-color: #eac926;
+      display: inline-block;
+    }
+    
+    .header-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .logo {
+      width: 47%;
+    }
+    
+    .banner {
+      position: relative;
+      top: 5px;
+      width: 100%;
+      margin: 0;
+    }
+    
+    .serch-box {
+      width: 47%;
+      display: flex;
+      border: solid 1px black;
+    }
+    
+    .serch-box input {
+      width: 100%;
+      height: 30px;
+      border: none;
+    }
+    
+    .serch-box button {
+      background-color: white;
+      border: none;
+    }
+    
+    .header-button {
+      display: none;
+    }
+    
+    .hamburguer-botton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .hamburguer-botton button {
+      border: none;
+      background-color: #03264c;
+      border-radius: 10%;
+    }
+    
+    .hamburguer-botton button i {
+      width: 20px;
+      background-color: #03264c;
+      color: #fff;
+      font-size: 25px;
+      padding: 5px;
+    }
+     ul {
+        list-style-type: none;
+     }
+
+     header a{
+        text-decoration: none;
+        color: black;
+     }
+
+     .form{
+        width: 80%;
+        margin:0 auto;
+     }
+  
+  .contac-form {
+    padding: 15px;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px white;
+    background-color: #eac926;
+  }
+  
+  .input-form {
+    margin: 5px;
+    border-radius: 5px;
+    height: 20px;
+    border: solid 1px white;
+  }
+  
+  .perfil-usuario{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .foto-usuario{
+    margin:5px
+  }
+
+#contraseña,
+#confirmar-contraseña{
+    display: block;
+    width: 98%;
+    border-radius: 5px;
+    height: 15px;
+    border: solid 1px white;
+}
+
+.send {
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#submit {
+    width: 25%;
+    border-radius: 5px;
+}
+
+#borrar {
+    width: 25%;
+    border-radius: 5px;
+}
+
+#submit input:hover{
+    background-color: #0022AA;
+    color:white;
+}
+
+  .pie-pagina {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-section{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .footer-section i{
+    font-size: 2em;
+    color:#1259c3;
+  }
+  
+  .footer-section b{
+    color: #666;
+    font-size: 24px;
+  }
+  
+  .Copyright{
+    width: 100%;
+  }
+
+  @media (min-width: 361px) {
+    .logo {
+      width: 30%;
+    }
+  
+    .serch-box {
+      width: 30%;
+    }
+  
+    .header-top p {
+      width: 30%;
+    }
+  
+    .header-button {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .nav-bar {
+      width: 44vw;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .hamburguer-botton button {
+      border: none;
+      background-color: none;
+    }
+
+    .pie-pagina{
+      background-color: white;
+    }
+
+    .footer-section{
+        width: 30%;
+      }
+
+      .foto-usuario{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .contac-form{
+        width: 90%;
+      }
+
+      #avatar{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+}
+@media (min-width: 769px) {
+
+    .hamburguer-botton {
+      display: none;
+    }
+
+    .contac-form{
+      width: 70%;
+    }
+}
